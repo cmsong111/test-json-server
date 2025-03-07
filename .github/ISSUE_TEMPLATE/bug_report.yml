@@ -1,0 +1,42 @@
+name: "🐛 Bug Report"
+description: "버그 발생 시 작성하는 이슈 템플릿입니다."
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: 📄 버그 설명
+      description: 발생한 문제를 자세히 설명해주세요.
+      placeholder: "예: 버튼을 클릭했을 때 오류가 발생합니다."
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 🛠 환경 정보
+      description: 버그가 발생한 환경을 적어주세요.
+      placeholder: "예: macOS 14.3 / Chrome 121"
+  - type: checkboxes
+    attributes:
+      label: 🔄 재현 가능 여부
+      description: 버그가 얼마나 자주 발생하는지 선택해주세요.
+      options:
+        - label: "항상 발생함"
+        - label: "가끔 발생함"
+        - label: "특정 조건에서만 발생함"
+  - type: textarea
+    attributes:
+      label: 📌 재현 방법
+      description: 버그를 재현하는 방법을 순서대로 적어주세요.
+      placeholder: |
+        1. 해당 페이지로 이동
+        2. 특정 버튼 클릭
+        3. 오류 메시지 발생
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🎯 예상 동작
+      description: 정상적으로 동작해야 하는 방식은 무엇인가요?
+  - type: textarea
+    attributes:
+      label: 📝 참고 자료
+      description: 오류 메시지, 스크린샷, 로그 등이 있다면 추가해주세요.
